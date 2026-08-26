@@ -16,6 +16,23 @@ export const metadata: Metadata = {
   title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
   description:
     "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
+    description:
+      "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+    type: "website",
+    locale: "id_ID",
+    siteName: "PT. ALVIN JAYA RECYCLE",
+  },
+  twitter: {
+    card: "summary",
+    title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
+    description:
+      "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
