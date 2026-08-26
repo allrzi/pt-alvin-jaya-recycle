@@ -21,7 +21,7 @@ export function ContactSection() {
             <div>
               <dt>Alamat</dt>
               <dd>
-                Jl. H. Toran No. 76, RT5/RW001,
+                Jl. H. Toran No. 76, RT.5/RW.001,
                 <br />
                 Rengas, Kec. Ciputat Timur,
                 <br />
