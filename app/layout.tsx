@@ -14,29 +14,46 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   verification: {
-  google: "CDR5sFkZ4rLslkJXKinFJv_BVxldhwKS_n3WX49QeHM",
-},
-  title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
+    google: "CDR5sFkZ4rLslkJXKinFJv_BVxldhwKS_n3WX49QeHM",
+  },
+
+  title: "PT. ALVIN JAYA RECYCLE | Jual Beli Barang Bekas & Daur Ulang",
+
   description:
-    "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+    "PT. ALVIN JAYA RECYCLE melayani jual beli barang bekas dan material daur ulang dengan layanan pickup untuk rumah tangga dan perusahaan.",
+
+  keywords: [
+    "barang bekas",
+    "jual beli barang bekas",
+    "material daur ulang",
+    "daur ulang",
+    "pengepul barang bekas",
+    "pickup barang bekas",
+    "scrap",
+    "PT Alvin Jaya Recycle",
+  ],
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
-    title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
+    title: "PT. ALVIN JAYA RECYCLE | Jual Beli Barang Bekas & Daur Ulang",
     description:
-      "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+      "Melayani jual beli barang bekas dan material daur ulang dengan layanan pickup untuk rumah tangga dan perusahaan.",
     type: "website",
     locale: "id_ID",
     siteName: "PT. ALVIN JAYA RECYCLE",
   },
+
   twitter: {
     card: "summary",
-    title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
+    title: "PT. ALVIN JAYA RECYCLE | Jual Beli Barang Bekas & Daur Ulang",
     description:
-      "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
+      "Melayani jual beli barang bekas dan material daur ulang dengan layanan pickup untuk rumah tangga dan perusahaan.",
   },
 };
+  
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
