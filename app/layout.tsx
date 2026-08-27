@@ -53,7 +53,39 @@ export const metadata: Metadata = {
       "Melayani jual beli barang bekas dan material daur ulang dengan layanan pickup untuk rumah tangga dan perusahaan.",
   },
 };
-  
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "PT. ALVIN JAYA RECYCLE",
+  description:
+    "Perusahaan yang melayani jual beli barang bekas dan material daur ulang dengan layanan pickup untuk rumah tangga dan perusahaan.",
+  telephone: "+6281385423643",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Jl. H. Toran No.76, RT.5/RW.001, Rengas",
+    addressLocality: "Ciputat Timur",
+    addressRegion: "Banten",
+    postalCode: "15444",
+    addressCountry: "ID",
+  },
+  areaServed: [
+    "Jakarta",
+    "Bogor",
+    "Depok",
+    "Tangerang",
+    "Bekasi",
+    "Jabodetabek",
+  ],
+  openingHours: "Mo-Su 08:00-20:00",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+6281385423643",
+    contactType: "customer service",
+    areaServed: "ID",
+    availableLanguage: "Indonesian",
+  },
+};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -61,7 +93,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(businessSchema),
+          }}
+        />
+      </body>
     </html>
   );
 }
