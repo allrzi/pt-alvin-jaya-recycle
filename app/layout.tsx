@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+  google: "CDR5sFkZ4rLslkJXKinFJv_BVxldhwKS_n3WX49QeHM",
+},
   title: "PT. ALVIN JAYA RECYCLE | Barang Bekas & Material Daur Ulang",
   description:
     "PT. ALVIN JAYA RECYCLE membeli berbagai barang bekas dan material daur ulang, dengan layanan pickup untuk individu dan perusahaan.",
